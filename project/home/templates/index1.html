@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{% static 'style.css'  %}">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile-photo {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 20px 0;
+        }
+        .name {
+            font-size: 2em;
+            margin: 10px 0;
+        }
+        .section {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="{% static "my_profile.jpg" %}" alt="Profile Photo" class="profile-photo">
+        <div class="name">salman sabir</div>
+        <div class="section">
+            <h2>About Me</h2>
+            <p>Hello my name is salman sabir  i am python  developer</p>
+        </div>
+        <div class="section">
+            <h2>Skills</h2>
+            <p>html, css, bootstrap, python </p>
+        </div>
+        <!-- <img src="{% static 'my_profile.jpg' % }" alt="free"> -->
+        <div class="section">
+            <h2> 2 year of Experience</h2>
+            <p> i am working in a Ai soft comapany for three year</p>
+        </div>
+        <div class="section">
+            <h2>Contact me</h2>
+            <p> this is my what app number  +913456789908  </p>        </div>
+    </div>
+</body>
+</html>
+
+
+</body>
+</html>
